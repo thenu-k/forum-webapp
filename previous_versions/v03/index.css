@@ -1,0 +1,106 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+/* Problematic Code! */
+
+body{
+    min-height: 100%;
+}
+html, body {
+   min-height: 100%;
+
+  }
+/* ---------------- */
+
+/* Header */
+header{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+/* Main section */
+
+
+#main{
+    width: 95%;
+    min-height: 600px;
+    background-color: rgb(12, 12, 12);
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template: 1fr/ 5% 90% 5%;
+
+}
+#main #center_piece{
+    grid-column: 2/3;
+    background-color: rgb(12, 12, 12);
+    height: 100%;
+    display: grid;
+    align-items: center;
+
+}
+
+#middle_column{
+    height: 80%;
+    width: 100%;
+    display: grid;
+    grid-template: 10% 80% 10%/ 1fr;
+    position: relative;
+}
+
+#title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border: solid white 1px;
+}
+#input_area{
+    height: 10%;
+    width: 100%;
+    border: solid white 1px;
+    position: absolute;
+    bottom: 0;
+}
+
+#input_area .button{
+    display: inline-block;
+    width: 70px;
+    height: 20px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+}
+
+#input_area textarea{
+    max-height: 95%;
+}
+
+#input_area form{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Template post */
+
+.post{
+    border: solid white 1px;
+    min-height:80px;
+    width: 100%;
+    display: grid;
+    grid-template: 1fr/ 10% auto;
+}
+.post span{
+    color: darkgray;
+}

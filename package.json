@@ -1,0 +1,22 @@
+{
+  "name": "Forum webapp",
+  "version": "0.4",
+  "description": "Version 0.4 will be created with the intention of deployment to a server.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "consolidate": "^0.16.0",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "nodemon": "^2.0.15",
+    "pg": "^8.7.3"
+  }
+}

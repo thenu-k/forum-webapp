@@ -1,0 +1,122 @@
+/* REMEBER: body.no_posts != body .no_posts */
+
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 16px;
+    font-weight: normal;
+    text-decoration: none;
+    width: 100%;
+    background-color: black;
+    list-style: none;
+    height: auto;
+    /* height: 100%; */
+}
+
+/* Body state */
+
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+    max-height: auto;
+}
+
+body.has_posts{
+    height: auto;
+}
+
+/* Navigation bar */
+
+header{
+    z-index: 9999;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+
+header nav{
+
+    display: flex;
+    height: 80px;
+    width: 60%;
+    justify-content: space-around;
+}
+header li{
+    width: 150px;
+}
+header a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Main section */
+
+#main.no_posts{
+    margin-top: -80px;
+    height: 100%;
+    background-color: rgb(12, 12, 12);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#post_container.no_posts{
+    width: 90%;
+    min-height: 60%;
+    max-height: auto;
+    background-color: black;
+    border-radius: 10px;
+    margin-top: 100px;             
+}
+
+
+/* Post sections */
+#post_container{
+    display: grid;
+    grid-template: 1fr/ 1fr 5fr 1fr;
+}
+#post_container div{
+    grid-column: 2/3;                     /* COMMON */
+}
+
+#post_container>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#middle_column .post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: rgb(20, 20, 20) solid 2px;
+    border-bottom: rgb(20, 20, 20) solid 2px;
+    margin: 10px;
+
+}
+
+#middle_column{
+    height: 100%;
+    /* overflow-y: scroll; */
+    overflow-x:hidden;
+}
+
+#refresh{
+    width: 100px;
+    height: 20px;
+    background-color: rgb(0, 0, 54);
+}
+#refresh:hover{
+    background-color:  rgb(0, 0, 31);
+    cursor: pointer;
+}
+
+.post{
+    height: 50px;
+}
