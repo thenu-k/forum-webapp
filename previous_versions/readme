@@ -1,0 +1,2 @@
+In this version of CK APIs, I will be connecting postgres to store the data.
+Also I'll if possible I'll be attempting to add some other CRUD operations.
